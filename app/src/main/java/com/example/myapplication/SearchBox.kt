@@ -53,17 +53,17 @@ import kotlinx.android.synthetic.main.showcase_filter_range.*
 
 class SearchBox : AppCompatActivity() {
     val client = ClientSearch(
-        ApplicationID("A47E3BWDPH"),
-        APIKey("4045beb1ae8f071d1de04686ebaf124e")
+        ApplicationID(""),
+        APIKey("")
     )
-    val index = client.initIndex(IndexName("WCM_SEARCH_EN"))
+    val index = client.initIndex(IndexName(""))
     val searcher = SearcherSingleIndex(index)
     val searchBox = SearchBoxConnector(searcher)
     val connection = ConnectionHandler(searchBox)
     val connection2 = ConnectionHandler()
     val adapter = MovieAdapter()
-    private val price = Attribute("benifits.price")
-    private val devicePrice = Attribute("benifits.devicePrice")
+    private val price = Attribute("")
+    private val devicePrice = Attribute("")
     private val groupID = FilterGroupID(price)
     private val primaryBounds = 0..15
     private val secondaryBounds = 0..10
